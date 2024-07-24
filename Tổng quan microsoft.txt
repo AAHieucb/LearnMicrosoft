@@ -1,0 +1,88 @@
+# Microsoft có vô số nhóm sản phẩm, bao gồm tự phát triển và mua lại từ công ty khác. 
+- Window OS: có rất nhiều phiên bản window như Window Hello, Window Ink, Window 10 Home, Window 10 Pro, Window 11, Window Server, vv
+Còn có Window 365 là dịch vụ truyền phát window từ đám mây sang mọi thiết bị, nó như 1 PC cloud đám mây mà user có thể làm việc từ xa.
+Vô số phần mềm đi kèm với window như Menu Start, Cortana, Edge, Paint, Skype, Window Defender. Trong Edge lại có Bing, Bing Chat, vv.
+
+- Microsoft 365: lại gồm nhiều loại
+-- Phần mềm văn phòng: Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, Teams, SharePoint, Yammer, Access, Publisher, Sway, Forms, Whiteboard giúp thao tác với các tệp văn bản, bảng tính, ghi chú và nhiều loại khác
+-- Cá nhân và gia đình: Family Safety (quản ý hoạt động gia đình), Editor (check lỗi chính tả), Clipchamp (sửa video)
+-- Doanh nghiệp: Vẫn là các ứng dụng đó nhưng dành cho doanh nghiệp, bổ sung thêm Bookings (đặt lịch hẹn), Syntex(trích xuất data từ document), Viva (cải thiện trải nghiệm làm việc của nhân viên), vv.
+-- Giáo dục: Vẫn là các ứng dụng đó nhưng là phiên bản dành cho giáo viên, sinh viên để hỗ trợ học tập, bổ sung Immersive Reader (cải thiện kỹ năng đọc), Math Solver, Flipgrid (tham gia hội thoại video)
+
+- Phần cứng Surface: Surface Pro, Surface Laptop, Surface Book, Surface Duo, Surface Go, Surface Studio, vv
+
+- Giải trí: Xbox One, Xbox Series X, Xbox Game Pass, Microsoft HoloLens
+
+- Mạng xã hội: LinkedIn Talent Solutions, LinkedIn Learning, Microsoft LinkedIn, Github (được mua lại)
+
+- Giải pháp doanh nghiệp khác: Microsoft Dynamic 365, Dynamic 365 Finance, Dynamics 365 Human Resources, Dynamics 365 Sales, Power BI, Power Apps, Microsoft Power Platform, Power Automate, Microsoft Project, Microsoft Visio
+
+- Hàng loạt các công cụ lập trình: Ngôn ngữ C#, Framework .NET, Visual Basic, Microsoft SQL Server, VS, VSC, mọi công cụ có chữ microsoft trong đó.
+
+- Đám mây Azure: Là một nền tảng cloud computing cung vô số tính năng, hỗ trợ nhiều hệ điều hành, ngôn ngữ lập trình, framework và thiết bị, cho phép sử dụng các công cụ và công nghệ mã nguồn mở.
+
+Có nhiều công cụ nhỏ trong azure để sử dụng trong đám mây như: các môi trường Azure Arc, Azure Stack, Azure Sentinel và Azure Security Center; các dịch vụ Azure Synapse Analytics, Azure Databricks, Azure Machine Learning, Azure Cognitive Services, Azure Bot Service; Các công cụ bảo mật Azure Firewall, Azure Key Vault, Azure Backup, Azure Site Recovery; các công cụ hỗ trợ lập trình Azure DevOps, Azure Functions, Azure K8s Service, Azure Machine Learning, vv
+
+-> Microsoft 365 (trước là Office 365): 
+Ứng dụng văn phòng trên nền điện toán đám bao gồm các ứng dụng Outlook, OneDrive, Word và Excel, OneDrive, Lync, Exchange, Access, Publisher, InfoPath, PowerPoint,...
+Còn có Sharepoint quản lý tài liệu và trao đổi thông tin giữa các doanh nghiệp. Có thể lưu mọi thông tin như ghi âm, mail, cuộc họp, số điện thoại, lịch, log, image, files,...
+
+-> Microsoft Power Platform: 
+Giúp doanh nghiệp tạo và deploy ứng dụng, quy trình làm việc, k cần viết code. Gồm PowerBI giúp thống kê, PowerApps giúp tạo apps, PowerAutomate giúp tự động hóa truy trình làm việc, Power Virtual Agents để tạo chatbot giao tiếp với khách hàng ngoài
+
+-> Microsoft Dynamics 365: 
+--> ERP (Enterprise Resource Planning) là 1 loại phần mềm quản lý doanh nghiệp tích hợp, thiết kế để tự động hóa và hỗ trợ nhiều hoạt động khác nhau trong một tổ chức. Hệ thống ERP giúp quản lý tài chính và nguồn nhân lực, quản lý hàng tồn kho, quản lý sản xuất và các hoạt động khác. 
+VD như theo dõi tất cả các khía cạnh liên quan đến tài chính của doanh nghiệp chẳng hạn.
+
+Dynamics 365 gần như 1 ERP dưới dạng SaaS tích hợp nhiều dịch vụ quản lý đủ thứ, từ chuỗi cung ứng, dự án, đến tài chính, quy tắc, quan hệ khách hàng. Nó có tích hợp nhiều loại dịch vụ với nhau ở các nền tảng khác của Microsoft
+
+
+
+# Công cụ quản lý
+Microsoft có rất nhiều công cụ nên họ chia ra các trang admin để quản lý cho từng công cụ.
+Microsoft admin center https://admin.microsoft.com/ là trang tổng hợp các trang admin giúp quản lý toàn bộ các ứng dụng của microsoft.
+Microsoft admin center cung 1 unified management interface and console cho admin để quản lý cả Azure AD và M365 (đương nhiên user chỉ access được vào M365 sau khi mua subscription M365 rùi), và user chỉ vào được trang nếu là được cấp quyền bởi admin.
+Vd team admin center là 1 phần của admin center nhưng chỉ quản lý chuyên cho Microsoft team.
+
+Thông thường họ k để 1 admin quản lý tất cả mà tạo ra nhiều tk admin ở các tenant con khác nhau, gọi là các dedicated admin. Nhưng ở đây vc chia tenant ra k có ý nghĩa nh về logic mà chỉ là tách các phần độc lập của organization ra mà thôi.
+
+Azure Portal có thể coi là trang admin center của azure. Nhưng Azure rất lớn và liên quan đến nhiều thứ nên đôi khi ta thấy có cái bị overlap dịch vụ nhau và ta có thể thích quản lý ở đâu cũng được, VD Azure Portal và Microsoft Admin Center hay Microsoft Entra Id. 
+=> Đó là lý do ta thấy danh sách user ở admin center chung, ở microsof entra id, ở azure portal tab user, thật ra là bị overlap dịch vụ thoi
+
+
+
+# API
+Với số lượng ứng dụng lớn như v, API của microsoft cũng k central. Có nhiều loại API:
+- Microsoft Graph API: A single REST API that provides access to resources across multiple Microsoft services, including Office 365, OneDrive, SharePoint, and more, nó chứa các thông tin chung
+- Azure Management API: A REST API that provides programmatic access to Azure resources, such as virtual machines, storage accounts, and networking resources. Docs thằng này có Sku.isTrial mà éo biết lấy ra sao
+- Azure Active Directory Graph API: A REST API that provides access to user and group data in Azure Active Directory, including user profiles, group membership, and more.
+- Office 365 Management Activity API: A REST API that provides access to the Office 365 audit log, which records user and administrator activity across various Office 365 services.
+- Office 365 Service Communications API: A REST API that provides information about the status of Office 365 services, including licensing information.
+- Microsoft Power Platform APIs: A set of REST APIs that provide access to Power Apps, Power Automate, and Power BI resources, including data connectors, flows, and visualizations.
+- Microsoft Dynamics 365 APIs: A set of REST APIs that provide access to data and resources in Microsoft Dynamics 365, including customer and sales data, customer service data, and more.
+- Microsoft Translator API: A REST API that provides programmatic access to the Microsoft Translator service, which can be used to translate text and speech between different languages.
+- Bing Search API: A REST API that provides access to the Bing search engine, which can be used to search for web pages, images, videos, and news articles.
+- Microsoft Cognitive Services APIs: A set of REST APIs that provide access to various cognitive services, such as speech recognition, image recognition, and natural language processing.
+
+Điều đặc biệt là mọi loại API đều có docs chi tiết, chỉ vài API mới có explorer online
+Microsoft Graph API: https://docs.microsoft.com/en-us/graph/overview
+Azure Management API: https://docs.microsoft.com/en-us/rest/api/azure/
+Azure Active Directory Graph API: https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-graph-api
+Office 365 Management Activity API: https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-management-activity-api-schema
+Office 365 Service Communications API: https://docs.microsoft.com/en-us/office/office-365-management-api/office-365-service-communications-api-reference
+Microsoft Power Platform APIs: https://docs.microsoft.com/en-us/connectors/custom-connectors/
+Microsoft Dynamics 365 APIs: https://docs.microsoft.com/en-us/dynamics365/customerengagement/on-premises/developer/webapi/get-started-web-api-client-side-javascript
+Microsoft Translator API: https://docs.microsoft.com/en-us/azure/cognitive-services/translator/translator-info-overview
+Bing Search API: https://docs.microsoft.com/en-us/bing/search-apis/bing-search-api-v7-reference
+Microsoft Cognitive Services APIs: https://docs.microsoft.com/en-us/azure/cognitive-services/
+
+=> Mỗi loại API có 1 cái url riêng. Bảo sao khi đọc docs thấy có hàng loạt API lạ:
+graph.microsoft.com => v1.0 và beta
+graph.windows.com
+manage.office.com
+...
+Còn có admin.graph.microsoft.com là Microsoft Graph API nhưng chỉ dùng cho M365, họ k publish API này cho mọi người dùng mà chỉ cho mỗi ứng dụng M365 của họ thôi nên ta k dùng nó được. 
+
+Cài module vào powershell có thể gọi được API của module đó, API này đủ stable để tạo ứng dụng production
+
+
