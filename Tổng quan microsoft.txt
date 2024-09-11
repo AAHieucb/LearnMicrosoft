@@ -86,3 +86,8 @@ Còn có admin.graph.microsoft.com là Microsoft Graph API nhưng chỉ dùng ch
 Cài module vào powershell có thể gọi được API của module đó, API này đủ stable để tạo ứng dụng production
 
 
+
+# Other
+-> Phân biệt: Windows là 1 họ hệ điều hành với nh phiên bản và công dụng khác nhau, trong đó nổi bật là window desktop và window server. 
+Window Server là 1 nhánh của hệ điều hành máy chủ của microsoft, thường dùng làm các server. Nó thích hợp các lập trình cơ sở dữ liệu như Access, MSSQL.
+Window Desktop là Ct phần mềm máy tính quản lý phần cứng tài nguyên máy tính, cung cấp môi trường làm vc như máy tính của ta bh đang dùng
