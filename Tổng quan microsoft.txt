@@ -3,6 +3,9 @@
 Còn có Window 365 là dịch vụ truyền phát window từ đám mây sang mọi thiết bị, nó như 1 PC cloud đám mây mà user có thể làm việc từ xa.
 Vô số phần mềm đi kèm với window như Menu Start, Cortana, Edge, Paint, Skype, Window Defender. Trong Edge lại có Bing, Bing Chat, vv.
 
+Pb: Window Server là 1 nhánh của hệ điều hành máy chủ của microsoft, thường dùng làm các server. Nó thích hợp các lập trình cơ sở dữ liệu như Access, MSSQL.
+Window Desktop là Ct phần mềm máy tính quản lý phần cứng tài nguyên máy tính, cung cấp môi trường làm vc như máy tính của ta bh đang dùng
+
 - Microsoft 365: lại gồm nhiều loại
 -- Phần mềm văn phòng: Word, Excel, PowerPoint, Outlook, OneNote, OneDrive, Teams, SharePoint, Yammer, Access, Publisher, Sway, Forms, Whiteboard giúp thao tác với các tệp văn bản, bảng tính, ghi chú và nhiều loại khác
 -- Cá nhân và gia đình: Family Safety (quản ý hoạt động gia đình), Editor (check lỗi chính tả), Clipchamp (sửa video)
@@ -76,18 +79,10 @@ Microsoft Translator API: https://docs.microsoft.com/en-us/azure/cognitive-servi
 Bing Search API: https://docs.microsoft.com/en-us/bing/search-apis/bing-search-api-v7-reference
 Microsoft Cognitive Services APIs: https://docs.microsoft.com/en-us/azure/cognitive-services/
 
-=> Mỗi loại API có 1 cái url riêng. Bảo sao khi đọc docs thấy có hàng loạt API lạ:
+Mỗi loại API có 1 cái url riêng. Bảo sao khi đọc docs thấy có hàng loạt API lạ:
 graph.microsoft.com => v1.0 và beta
 graph.windows.com
 manage.office.com
 ...
 Còn có admin.graph.microsoft.com là Microsoft Graph API nhưng chỉ dùng cho M365, họ k publish API này cho mọi người dùng mà chỉ cho mỗi ứng dụng M365 của họ thôi nên ta k dùng nó được. 
-
-Cài module vào powershell có thể gọi được API của module đó, API này đủ stable để tạo ứng dụng production
-
-
-
-# Other
--> Phân biệt: Windows là 1 họ hệ điều hành với nh phiên bản và công dụng khác nhau, trong đó nổi bật là window desktop và window server. 
-Window Server là 1 nhánh của hệ điều hành máy chủ của microsoft, thường dùng làm các server. Nó thích hợp các lập trình cơ sở dữ liệu như Access, MSSQL.
-Window Desktop là Ct phần mềm máy tính quản lý phần cứng tài nguyên máy tính, cung cấp môi trường làm vc như máy tính của ta bh đang dùng
+=> Cài module vào powershell có thể gọi được API của module đó, API này đủ stable để tạo ứng dụng production

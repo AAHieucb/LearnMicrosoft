@@ -1,3 +1,6 @@
+Azure
+
+
 #***So sánh đám mây
 Ta thường thấy có 2 nhu cầu lớn nhất sử dụng đám mây: 1 là các dev dùng cho việc lập trình; 2 là doanh nghiệp sử dụng để quản lý: 
 - Có nhiều đám mây hỗ trợ dev trong việc xác thực, lưu database, socket, message queue, hosting, machine learning, vv
@@ -16,22 +19,20 @@ Nên dùng nếu dự án của ta sử dụng các công cụ khác liên quan 
 
 
 # Basic
-Dịch vụ tính toán: Máy ảo; Điện toán đám mây giúp người dùng cài các ứng dụng mở rộng và Azure sẽ chịu trách nhiệm quản lý thông báo cho người dùng; Service Fabric giúp microservice; Các hàm có sẵn
+Dịch vụ tính toán: Máy ảo; Service Fabric giúp microservice; Các hàm có sẵn
 Kết nối mạng: Azure CDN; Express Route giúp liên lạc riêng tư; Azure DNS giúp người dùng làm chủ các DNS domain hệ thống.
 Lưu trữ: DiskStorage; Database; BlobStorage; FileStorage; QueueStorage.
 
-Azure cloud là đám mây an toàn nhất vì được microsoft uy tín quản lý. 
-Azure cloud có thể tùy chỉnh và mở rộng các tài nguyên tùy nhu cầu và chỉ trả tiền cho những gì ta sử dụng.
-Azure cloud có vô số công cụ hỗ trợ lập trình giúp thao tác bất cứ thứ gì ta muốn. Thậm chí lên tới vài trăm công cụ dùng không xuể
+Azure cloud có thể tùy chỉnh và mở rộng các tài nguyên tùy nhu cầu và chỉ trả tiền cho những gì ta sử dụng. Có đủ mọi tool lập trình.
 Ta có thể dùng thử azure nhưng phải có thẻ visa và có vài trăm đô bên trong, đó là lý do vì sao azure chỉ phù hợp với công ty lớn.
 
 
 
 # Chứng chỉ Azure 
 Azure 900 và Azure 104 là các mã chỉ định cho các kỳ thi chứng chỉ của Microsoft liên quan đến Azure.
-1) AZ-900 (Microsoft Azure Fundamentals) Đây là kỳ thi dành cho những người mới bắt đầu với Azure và đám mây. Nó tập trung vào các khái niệm cơ bản của đám mây và Azure, bao gồm các mô hình dịch vụ đám mây, các loại dịch vụ Azure, bảo mật, quyền riêng tư, tuân thủ, và đảm bảo đáng tin cậy.
+1) AZ-900 (Microsoft Azure Fundamentals) kỳ thi dành cho newbie. Nó tập trung vào các khái niệm cơ bản của Azure, bảo mật, quyền riêng tư.
 
-2) AZ-104 (Microsoft Azure Administrator) Đây là kỳ thi dành cho những người quản lý tài nguyên Azure. Nó tập trung vào các kỹ năng cần thiết để quản lý và vận hành một môi trường Azure, bao gồm quản lý tài nguyên và nhóm tài nguyên, quản lý lưu trữ, cấu hình và quản lý máy ảo, và cấu hình và quản lý mạng ảo.
+2) AZ-104 (Microsoft Azure Administrator) kỳ thi dành cho những người quản lý tài nguyên Azure. Nó tập trung vào các kỹ năng cần thiết để quản lý và vận hành một môi trường Azure, bao gồm quản lý tài nguyên và nhóm tài nguyên, quản lý lưu trữ, cấu hình và quản lý máy ảo, và cấu hình và quản lý mạng ảo.
 
 Ngoài ra còn nhiều loại chứng chỉ khác như:
 - AZ-204 (Developing Solutions for Microsoft Azure): Dành cho những người phát triển ứng dụng trên Azure.
@@ -39,17 +40,9 @@ Ngoài ra còn nhiều loại chứng chỉ khác như:
 - AZ-500 (Microsoft Azure Security Technologies): Dành cho những người chuyên về bảo mật trên Azure.
 - AI-100 (Designing and Implementing an Azure AI Solution): Dành cho những người xây dựng giải pháp AI trên Azure.
 
--> Để nắm được Azure, cần: 
-Hiểu về các dịch vụ và tài nguyên mà azure cung cấp
-Biết cách quản lý đám mây, chi phí, bảo mật, quản lý mạng, quy hoạch tài chính, quản lý máy ảo và db, các dịch vụ lưu trữ (Storage Services)
-Làm việc với công cụ liên quan như Azure cli, PowerShell, ARM templates, Azure Resource Manager.
-
-Có thể phát triển quản lý web và api
-Sử dụng các dịch vụ AI và Machine Learning của Azure
 
 
-
-# Sử dụng dịch vụ của Azure
+# Dùng Azure SQL DB / Azure Load Balancer / Azure Service Bus
 Giả sử ta đã có tài khoản trả phí với đầy đủ các tính năng cần thiết của Azure và có thể sử dụng dịch vụ cho code luôn
 
 -> VD sử dụng dịch vụ Azure SQL DB:
@@ -103,17 +96,24 @@ Azure cung hẳn 1 tool riêng là Azure Pricing Calculator để ước lượn
 - Publish products để developers có thể đăng ký và sử dụng APIs.
 - Monitor APIs thông qua Azure portal hoặc Azure Monitor.
 
--> Vd sử dụng Azure Service Bus làm message queue trong web C#:
+-> Sử dụng Azure Service Bus làm message queue
 1 dịch vụ trong hệ sinh thái Microsoft Azure, cung khả năng liên lạc tin cậy giữa các ứng dụng thông qua mô hình (message queuing) và publish/subscribe.
 Vào Azure Portal chọn Service Bus -> điền các thông tin subscription phải mua mới có (hoặc 1 account khác level cao hơn mua và ủy quyền cho account của ta dùng) -> Tạo queue mới và dùng trong code C# để phát/bắt sự kiện hàng đợi mà xử lý.
+Tạo 1 máy push message vào queue, 1 or nhiều máy subscribe lấy message ra, tùy ý config queue.
 
 
 
-# Pb Resource Group và Subscription trong Azure
-Resource Group là một container chứa tất cả các tài nguyên liên quan đến một dự án hoặc ứng dụng cụ thể trên Azure. Nó giúp tổ chức tài nguyên hợp lý, giúp quản lý và tìm kiếm các tài nguyên dễ dàng hơn. Mỗi tài nguyên chỉ có thể thuộc về một Resource Group duy nhất.
-Subscription là quyền được sử dụng các dịch vụ của Azure. Mỗi subscription có một hạn mức chi phí mà ta phải mua để sử dụng các dịch vụ Azure trong phạm vi hạn mức đó. Một subscription có thể chứa nhiều Resource Groups và tài nguyên là tất cả những thứ ta có thể tương tác khi dùng subscription đó. 
+# Thêm 1 subscription trong Azure: 
+Vào Azure Admin center -> Billing -> Purchase services -> trả phí cho subscription mới để dùng. 
+Khi ta đăng ký sử dụng service lần đầu như v, Azure AD tenant tự động được provisioned cho organization luôn. Ta có thể vào Azure AD tenant để quản lý account user và group và cloud resource, phân quyền cho user thoải mái. 
+Azure AD tenant tự được sinh ra và gửi cho organization bất cứ khi nào họ subscribe lần đầu vào microsoft cloud service và dùng nó để quản lý tk. Azure AD là 1 identity and access management service. Nó cung các kiểu authentication và authorization khi user đăng nhập, tập trung vào nhận dạng và access management
+VD: Nhiều lúc quản lý, user signin vào M365 thì họ cũng phải được xác thực thành công qua Azure AD đã và họ chỉ access được vào phần tài nguyên của M365 phụ thuộc vào Azure AD policies. Azure AD tenant chính là nguồn gốc có danh sách user và mọi thứ.
+VD ta muốn đăng ký thêm dịch vụ sử dụng chung cái Azure AD tenant đó, giữ nguyên các credentials: vào Azure portal -> click subscriptions -> Add subscription page và thực hiện thanh toán là dùng như bth.
 
-Tức là khi ta tạo một tài nguyên trên Azure (như một Azure SQL Database hoặc Azure Load Balancer), ta cần chọn Subscription và Resource Group mà tài nguyên đó sẽ thuộc về. Subscription quyết định hạn mức chi phí cho tài nguyên, trong khi Resource Group giúp tổ chức và quản lý tài nguyên. 2 thành phần k thể thiếu trong quản lý tài nguyên của azure.
+-> Resource Group và Subscription:
+- Resource Group là một container chứa tất cả các tài nguyên liên quan đến một dự án hoặc ứng dụng cụ thể trên Azure. Nó giúp tổ chức tài nguyên hợp lý, giúp quản lý và tìm kiếm các tài nguyên dễ dàng hơn. Mỗi tài nguyên chỉ có thể thuộc về một Resource Group duy nhất.
+- Subscription là quyền được sử dụng các dịch vụ của Azure. Mỗi subscription có một hạn mức chi phí mà ta phải mua để sử dụng các dịch vụ Azure trong phạm vi hạn mức đó. Một subscription có thể chứa nhiều Resource Groups và tài nguyên là tất cả những thứ ta có thể tương tác khi dùng subscription đó. 
+=> Tức là khi ta tạo một tài nguyên trên Azure (như một Azure SQL Database hoặc Azure Load Balancer), ta cần chọn Subscription và Resource Group mà tài nguyên đó sẽ thuộc về. Subscription quyết định hạn mức chi phí cho tài nguyên, trong khi Resource Group giúp tổ chức và quản lý tài nguyên. 
 
 
 
@@ -147,23 +147,10 @@ Tất cả điều này đều có thể phân quyền. VD admin cao phân quy�
 URL: https://cdx.transform.microsoft.com/my-tenants
 => Login bằng tk doanh nghiệp để xem tk ta có quyền tạo tenant nhỏ hơn trong tổ chức không
 
-Xem tenant mình thuộc về trong Azure Portal login góc bên phải, hover vào sẽ thấy thông tin. Tenant mặc định acc thông thường nằm trong Contoso
 
 
-
-# Để thêm 1 subscription trong Azure: 
-Vào Azure Admin center -> Billing -> Purchase services -> trả phí cho subscription mới để dùng. 
-Khi ta đăng ký sử dụng service lần đầu như v, Azure AD tenant tự động được provisioned cho organization luôn. Ta có thể vào Azure AD tenant để quản lý account user và group và cloud resource, phân quyền cho user thoải mái. 
-Azure AD tenant tự được sinh ra và gửi cho organization bất cứ khi nào họ subscribe lần đầu vào microsoft cloud service và dùng nó để quản lý tk. Azure AD là 1 identity and access management service. Nó cung các kiểu authentication và authorization khi user đăng nhập, tập trung vào nhận dạng và access management
-VD: Nhiều lúc quản lý, user signin vào M365 thì họ cũng phải được xác thực thành công qua Azure AD đã và họ chỉ access được vào phần tài nguyên của M365 phụ thuộc vào Azure AD policies. Azure AD tenant chính là nguồn gốc có danh sách user và mọi thứ.
-
-Bh ta muốn đăng ký thêm dịch vụ sử dụng chung cái Azure AD tenant đó, giữ nguyên các credentials: vào Azure portal -> click subscriptions -> Add subscription page và thực hiện thanh toán là dùng như bth.
-
-
-
-# Cơ chế quản lý nhân viên với AAD tenant và Active Directory Domain Service
+# Cơ chế quản lý nhân sự với AAD tenant và Active Directory Domain Service
 - AAD tenant: User account for all "Microsoft's cloud offerings" đều được lưu trong 1 Azure Active Directory (Azure AD) tenant. Thông tin về tenant này thấy trong Azure Active Directory. Mục users và groups sẽ show ra mọi users và groups của tenant
-
 AAD tenant hỗ trợ các khung xác thực web-based như OAuth 2.0, SAML 2.0 và Open ID1.
 
 - Active Directory Domain Services (AD DS) là một dịch vụ quản lý người dùng, nhóm và tài nguyên trong một mạng Windows nội bộ. 
@@ -171,8 +158,8 @@ Nó là một phần của hệ thống quản lý tài nguyên mạng của Mic
 
 So sánh: AAD tenant không có các khả năng như chính sách nhóm, Application Containers, schema có thể mở rộng, AD domain/forest trusts, Kerberos constrained delegation hay LDAP write trong khi AD DS có thể hỗ trợ các khả năng này
 
--> Để biết công ty có sử dụng Active Directory Domain Services (AD DS) hay không:
-Nhấn tổ hợp phím Windows + R, gõ "cmd" và nhấn Enter để mở Command Prompt -> Gõ lệnh "echo %logonserver%" => Đây là lệnh để kiểm tra xem máy tính có đang kết nối với một máy chủ AD DS hay không. Nếu kết quả trả về là tên máy chủ, tức là máy tính của ta đang sử dụng connect tới 1 AD DS. Công ty phải đăng ký dùng dịch vụ AD DS của microsoft để quản lý mạng nội bộ mới có tính năng này.
+-> Để biết công ty có sử dụng Active Directory Domain Services (AD DS) hay không
+Trên máy công ty: Nhấn tổ hợp phím Windows + R, gõ "cmd" và nhấn Enter để mở Command Prompt -> Gõ lệnh "echo %logonserver%" => Đây là lệnh để kiểm tra xem máy tính có đang kết nối với một máy chủ AD DS hay không. Nếu kết quả trả về là tên máy chủ, tức là máy tính của ta đang sử dụng connect tới 1 AD DS. Công ty phải đăng ký dùng dịch vụ AD DS của microsoft để quản lý mạng nội bộ mới có tính năng này.
 -> Gõ lệnh "gpresult /r": Đây là lệnh để kiểm tra các chính sách nhóm được áp dụng trên máy tính. Kết quả trả về chứa thông tin về chính sách nhóm từ một miền AD DS.
 
 Cả 2 đều là dịch vụ của microsoft để quản lý nhân sự. Trong một số trường hợp, AD DS có thể được tích hợp với các dịch vụ đám mây như Azure Active Directory (Azure AD) để mở rộng danh tính của ta từ môi trường AD DS nội bộ sang Azure. 
@@ -187,13 +174,11 @@ Azure IaaS: VM ----------------> |--------------------------------------|
 # Other
 -> Azure data studio 
 Là 1 công cụ quản lý db đa nền tảng, có thể làm việc với SQL Server, Azure SQL Database, PostgreSQL, MySQL và MongoDB. Nó có giao diện đồ họa, tích hợp git và nhiều tiện ích khác
-Nó có nhiều tính năng và hiện đại hơn SSMS nhưng vẫn có nhiều tính năng nâng cao của SSMS k thể bị thay thế. Dùng connect db luôn.
 
 -> Azure Storage Explorer là 1 ứng dụng free của microsoft để quản lý tài nguyên trên đám mây ở máy local. 
 VD dùng SYSTEM_STORAGE_CONNECTION_STRING vào xem quản lý thông tin blob, file, table, disk, queue mà k cần vào đám mây bth
-
 Blob là binary large object là 1 kiểu data lưu trữ data nhị phân mà k cần qt định dạng của chúng. Blob dùng trong db để lưu ảnh, executable file, media file. 
 
-Trong SQL Server có thể sử dụng các kiểu dữ liệu như varbinary(max), image, text, ntext để lưu trữ blob. Cũng có thể sử dụng các hàm như OPENROWSET, BULK INSERT, FILESTREAM để đọc hoặc ghi blob từ file hệ thống. Cũng có thể sử dụng Azure Blob Storage để lưu trữ blob trên đám mây.
+--> Blob có nhiều cách lưu: Azure Blob Storage giúp lưu blob data
+Trong SQL Server có thể sử dụng các kiểu dữ liệu như varbinary(max), image, text, ntext để lưu trữ blob. Cũng có thể sử dụng các hàm như OPENROWSET, BULK INSERT, FILESTREAM để đọc hoặc ghi blob từ file hệ thống. 
 Trong MongoDB có thể sử dụng kiểu dữ liệu Binary để lưu trữ blob. Cũng có thể sử dụng các hàm như BinData, GridFS, BSON để đọc hoặc ghi blob từ file hệ thống.
-

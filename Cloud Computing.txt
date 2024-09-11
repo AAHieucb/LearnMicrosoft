@@ -21,7 +21,6 @@ Khi đã có máy chủ(cloud) tài nguyên lớn, tốc độ cao, ta có thể
 -> Điện toán đám mây cung máy chủ bộ nhớ lớn online thực chất kp là vô hạn nhé mà chỉ là do tận dụng tối ưu được không gian lưu trữ nên dung lượng cực kỳ lớn gần như vô hạn mà thôi. Điều này đồng nghĩa nó giúp tiết kiệm chi phí cho doanh nghiệp, và phía doanh nghiệp cũng k cần lo bảo trì này nọ mà chỉ cần sử dụng thôi. Với các tổ chức lớn, ta có 2 cách là: tự dùng máy chủ riêng và tự bảo mật cũng như bảo trì; thuê máy chủ cloud uy tín.
 
 Đừng hiểu lầm là cloud connect nhiều máy chủ do mọi người tình nguyện nhé mà nó là của 1 tổ chức cung cấp dịch vụ đám mây làm kg lưu trữ và có thu phí, họ thường cho dùng free với giới hạn nhất định mà thôi. Nó khác hoàn toàn tor network, nó là tập trung.
-
 Cơ chế các đám mây đồng bộ dữ liệu với nhau như đã học trong hệ phân tán. Nó hoàn toàn phân tán, chỉ khác blockchain là k phi tập trung thôi, do 1 tổ chức quản lý
 
 -> Cloud computing làm giảm nhu cầu sử dụng phần cứng chuyên dụng.
@@ -57,7 +56,8 @@ VD: Microsoft Azure, AWS, Digital Ocean, rackspace, Amazon EC2
 
 # Platform as a Service(PaaS)
 IaaS cung cấp công cụ và giao toàn quyền cho khách hàng, VD cung resource VM, còn user vào VM đó tùy ý phát triển các ứng dụng lên. Nhưng PaaS cung thêm các công cụ cần thiết để thử nghiệm, deploy, manage, update các sản phẩm. Nó lo các phần mềm trung gian, hệ điều hành,... các thứ cần thiết để tạo phần mềm và chạy phần mềm. Các thứ cung thêm đó khiến cho nó giống như hẳn 1 platform và người dùng chỉ cần dùng và chạy luôn cho tiện (Nếu chỉ cung mỗi không gian lưu trữ thì người dùng phải cài hết tất cả các cái khác trên đó hoặc chỉ như sử dụng thêm space mà thôi).
-VD: Heroku, Microsoft Azure
+VD: Microsoft Azure
+Heroku dù chỉ là PaaS nhưng cũng có cách tiết kiệm tài nguyên bằng cách đóng server khi không sử dụng sau 1 khoảng thời gian. Khi sử dụng lại lần đầu tiên, nó sẽ mất thời gian khởi động nên có thể sẽ lâu hơn bth, các lần sau khi chưa đóng thì truy cập sẽ nhanh hơn. 
 
 => Khi hosting trên các nền tảng đám mây, nó cung cho ta 1 máy chủ ảo riêng và cho phép dùng terminal của nó trên hđh để làm đủ mọi thứ như 1 máy tính server thực. Vì thực tế có terminal là làm được tất cả. Bộ nhớ lớn, luôn available, ta có thể cài các ứng dụng tùy ý đủ để chạy phần mềm ta dùng trong server đó.
 
@@ -69,16 +69,16 @@ VD: Google Apps, Salesforce, Microsoft Office 365, Paypal, zendesk, facebook
 
 
 
-#***Bản chất Function as a Service(FaaS):
-Chia nhỏ các ứng dụng đám mây và chỉ chạy từng phần khi cần dùng phần đó. Tức nó vẫn cung mọi thứ nhưng cơ sở hạ tầng tự thay đổi cho phù hợp để ứng dụng chỉ dùng tài nguyên khi nó cần chạy
+# Bản chất Function as a Service (FaaS)
+Dev có thể chạy các đoạn mã functions mà k cần quản lý cơ sở hạ tầng máy chủ. 
+Cơ sở hạ tầng cũng tự thay đổi cho phù hợp để ứng dụng chỉ dùng tài nguyên khi nó cần chạy
 VD bth nó triển khai ứng dụng ta sẽ được cung 1 lượng bộ nhớ cloud chung nhưng cái này ta chỉ cần khai báo cho nền tảng biết cách cung cấp tài nguyên khi ứng dụng được thực thi, cơ sở hạ tầng tự động thay đổi. Chạy thì tự động thay đổi cho phù hợp, khi không chạy thì quay về ban đầu
 VD: thuê phòng thì người thuê chỉ trả tiền cho phòng ăn vào giờ ăn tối, phòng ngủ khi họ đang ngủ, phòng khách khi họ đang xem TV và khi họ không sử dụng các phòng đó, họ không phải trả tiền thuê phòng. Ứng dụng chạy và sử dụng tài nguyên cũng như v.
-VD: Heroku sẽ tắt server sau 1 ktg nếu k có ai sử dụng, có request sẽ khởi động lại.
 
 
 
 # Còn có backend as a service (BaaS)
-Là cloud model cung platform để build backend. Có những nền tảng đủ mạnh để cung sẵn đầy đủ backend từ database cho đến server, ổ đĩa, domain DNS, load balancer, môi trường container và cũng tích hợp sẵn nh services của backend mà k cần code lại.
+Là cloud model chuyên cung platform để build backend. Có những nền tảng đủ mạnh để cung sẵn đầy đủ backend từ database cho đến server, ổ đĩa, domain DNS, load balancer, môi trường container và cũng tích hợp sẵn nh services của backend mà k cần code lại.
 Nch nó giống các nền tảng khác nhưng chuyên cung công cụ cho backend
 VD: firebase, skygear, parse server
 
@@ -87,7 +87,5 @@ VD: firebase, skygear, parse server
 # Other
 -> Nhanh:
 Theo thứ tự từ cũ đến hiện đại: chỉ cung bộ nhớ -> cung thêm các công cụ -> cung mọi thứ chỉ cần chạy -> vẫn cung mọi thứ nhưng cơ sở hạ tầng tự thay đổi cho phù hợp để ứng dụng chỉ dùng tài nguyên khi nó cần chạy
-
-Heroku dù chỉ là PaaS nhưng cũng có cách tiết kiệm tài nguyên bằng cách đóng server khi không sử dụng sau 1 khoảng thời gian. Khi sử dụng lại lần đầu tiên, nó sẽ mất thời gian khởi động nên có thể sẽ lâu hơn bth, các lần sau khi chưa đóng thì truy cập sẽ nhanh hơn. 
 
 
