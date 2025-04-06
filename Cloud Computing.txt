@@ -57,6 +57,8 @@ VD: Microsoft Azure, AWS, Digital Ocean, rackspace, Amazon EC2
 # Platform as a Service(PaaS)
 IaaS cung cấp công cụ và giao toàn quyền cho khách hàng, VD cung resource VM, còn user vào VM đó tùy ý phát triển các ứng dụng lên. Nhưng PaaS cung thêm các công cụ cần thiết để thử nghiệm, deploy, manage, update các sản phẩm. Nó lo các phần mềm trung gian, hệ điều hành,... các thứ cần thiết để tạo phần mềm và chạy phần mềm. Các thứ cung thêm đó khiến cho nó giống như hẳn 1 platform và người dùng chỉ cần dùng và chạy luôn cho tiện (Nếu chỉ cung mỗi không gian lưu trữ thì người dùng phải cài hết tất cả các cái khác trên đó hoặc chỉ như sử dụng thêm space mà thôi).
 VD: Microsoft Azure
+VD Oracle vừa cung cơ sở hạ tầng PaaS, cũng cung cả các phần mềm doanh nghiệp sẵn như ERP là SaaS.
+
 Heroku dù chỉ là PaaS nhưng cũng có cách tiết kiệm tài nguyên bằng cách đóng server khi không sử dụng sau 1 khoảng thời gian. Khi sử dụng lại lần đầu tiên, nó sẽ mất thời gian khởi động nên có thể sẽ lâu hơn bth, các lần sau khi chưa đóng thì truy cập sẽ nhanh hơn. 
 
 => Khi hosting trên các nền tảng đám mây, nó cung cho ta 1 máy chủ ảo riêng và cho phép dùng terminal của nó trên hđh để làm đủ mọi thứ như 1 máy tính server thực. Vì thực tế có terminal là làm được tất cả. Bộ nhớ lớn, luôn available, ta có thể cài các ứng dụng tùy ý đủ để chạy phần mềm ta dùng trong server đó.
@@ -66,6 +68,7 @@ Heroku dù chỉ là PaaS nhưng cũng có cách tiết kiệm tài nguyên bằ
 # SaaS(Software as a service)
 Dịch vụ được sử dụng nh nhất vì nó đã tối ưu gần như hoàn toàn các yêu cầu người dùng cuối. Nhà cung cấp SaaS làm tất cả mọi thứ, chỉ cần vào và sử dụng ứng dụng. Quy mô mở rộng lớn và nhanh. Nhà cung cấp sở hữu ứng dụng và cung cấp cho khách hàng qua internet.
 VD: Google Apps, Salesforce, Microsoft Office 365, Paypal, zendesk, facebook
+VD Salesforce (SaaS): là đám mây chuyên về CRM quản lý khách hàng. Nó không cung cấp hạ tầng để chạy ứng dụng cho dev, mà là một phần mềm có sẵn chạy trên đám mây.
 
 
 

@@ -171,6 +171,21 @@ Azure IaaS: VM ----------------> |--------------------------------------|
 
 
 
+# Tối ưu chi phí
+Azure data center: Lưu lượng data truyền ảnh hưởng tới chi phí, tối ưu hóa các trường sử dụng và truyền đi sẽ giúp giảm chi phí
+Azure VM giả lập win/linux. Chọn đúng lưu lượng CPU và mem. Tắt VM cloud vào đêm khi k sử dụng để tối ưu chi phí.
+Azure Blob Storage chia nhiều tier: hot tier truy cập rẻ nhưng lưu trữ đắt > cool tier > cold tier > archive tier là lưu trữ rẻ nhưng truy cập rất đắt
+
+
+
+
+# SKU (Stock Keeping Unit) 
+Sử dụng để định nghĩa các phiên bản hoặc cấu hình của một dịch vụ hoặc tài nguyên. SKU giúp xác định những tính năng, hiệu suất và giá cả khi sử dụng một dịch vụ cụ thể trong Azure.
+SKU định nghĩa hiệu suất hoặc tài nguyên mà dịch vụ cung cấp, ví dụ như số CPU, bộ nhớ RAM, hoặc dung lượng lưu trữ, location, tier, tốc độ.
+VD: Với Azure Virtual Machines, SKU có thể là "Standard_D2_v3" (2 vCPU, 8 GB RAM).
+
+
+
 # Other
 -> Azure data studio 
 Là 1 công cụ quản lý db đa nền tảng, có thể làm việc với SQL Server, Azure SQL Database, PostgreSQL, MySQL và MongoDB. Nó có giao diện đồ họa, tích hợp git và nhiều tiện ích khác
@@ -182,3 +197,5 @@ Blob là binary large object là 1 kiểu data lưu trữ data nhị phân mà k
 --> Blob có nhiều cách lưu: Azure Blob Storage giúp lưu blob data
 Trong SQL Server có thể sử dụng các kiểu dữ liệu như varbinary(max), image, text, ntext để lưu trữ blob. Cũng có thể sử dụng các hàm như OPENROWSET, BULK INSERT, FILESTREAM để đọc hoặc ghi blob từ file hệ thống. 
 Trong MongoDB có thể sử dụng kiểu dữ liệu Binary để lưu trữ blob. Cũng có thể sử dụng các hàm như BinData, GridFS, BSON để đọc hoặc ghi blob từ file hệ thống.
+
+-> Azure có AKS tương tự K8s
